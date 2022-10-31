@@ -1,3 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    list-style: none;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
 .hidden {
-  display: none;
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.wrap-item {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-form {
+    width: 500px;
+    height: 60px;
+    border: none;
+    border-bottom: 3px solid white;
+}
+
+.name-box {
+    color: white;
+    height: 100%;
+    font-size: 30px;
+    background: none;
+    text-align: center;
+    /* font-size: 30px; */
+    font-weight: bold;
+}
+
+.name-box::placeholder {
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+#todo-form {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-bottom: 3px solid white;
+}
+.todo-box {
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    background: none;
+    text-align: center;
+    /* font-size: 30px; */
+    font-weight: bold;
+}
+
+.todo-box::placeholder {
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+#todo-list {
+    width: 100%;
+    height: auto;
+    border: none;
+    padding: 0 40px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+li > span {
+    left: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+li > button {
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+    color: white;
+    border-radius: 5px;
+    background: black;
+    opacity: 0.4;
+    border: 1px solid white;
+}
+
+#clock {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+#greeting {
+    width: 100%;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+#quote {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%);
+    color: white;
+}
+
+.quote-txt {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.autho-txt {
+    display: inline-block;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+#weather {
+    position: absolute;
+    top: 20px;
+    right: 30px;
 }
